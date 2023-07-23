@@ -2,6 +2,7 @@ import { Cormorant_SC } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./desktop-nav-bar-content.module.css"
+import { SignInButton } from "../buttons"
 
 // TODO: Choose a font
 const cormorantSc = Cormorant_SC({
@@ -37,7 +38,9 @@ export const DesktopNavBarContent = () => {
           &nbsp;|&nbsp;
           {/* <NavLink text="Estimator" url="/estimator" />&nbsp;|&nbsp; */}
           <NavLink text="Contact Us" url="/contact" />
+
         </div>
+          <SignInButton />
       </div>
     </div>
   )
