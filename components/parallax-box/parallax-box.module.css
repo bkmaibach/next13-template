@@ -1,0 +1,74 @@
+.parallaxBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 26rem;
+  
+  
+}
+
+
+.parallaxOverlay {
+  /* background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%); */
+  background: radial-gradient(ellipse at center, #00000088 30%, #ffffff33 100%);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.parallaxImage {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.parallaxImage.loaded {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1080px) {
+  .parallaxBox {
+    height: 14rem !important;
+  }
+
+  .yShift1 {
+    bottom: -240px;
+  }
+  .yShift2 {
+    bottom: -160px;
+  }
+  .yShift3 {
+    bottom: -110px;
+  }
+  .yShift4 {
+    bottom: -220px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .parallaxBox {
+    height: 26rem;
+  }
+  
+  .yShift1 {
+    bottom: -600px;
+  }
+  .yShift2 {
+    bottom: -400px;
+  }
+  .yShift3 {
+    bottom: -100px;
+  }
+  .yShift4 {
+    bottom: -800px;
+  }
+}
