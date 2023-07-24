@@ -1,0 +1,14 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url  	= env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+  // If you want to use Prisma Migrate, shadow database is now managed automatically. No need for env variable!.
+  // https://neon.tech/docs/release-notes/2023-07-13-storage-and-compute#whats-new:~:text=Users%20of%20Prisma%20Migrate%20no%20longer%20need%20to%20manually%20create%20a%20shadow%20database%20in%20Neon.
+}

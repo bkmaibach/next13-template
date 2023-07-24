@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from "./desktop-nav-bar-content.module.css"
 import { SignInButton } from "../buttons"
+import { NavLink, SignInOutLink } from "../links"
 
 // TODO: Choose a font
 const cormorantSc = Cormorant_SC({
@@ -26,38 +27,22 @@ export const DesktopNavBarContent = () => {
         </div>
 
         <div className="w-1/3 flex justify-end flex-wrap">
-          <NavLink text="Home" url="/" />
+          <NavLink href="/">Home</NavLink>
           &nbsp;|&nbsp;
-          <NavLink text="Projects" url="/projects" />
+          <NavLink href="/projects">Projects</NavLink>
           &nbsp;|&nbsp;
-          <NavLink text="Design" url="/design" />
+          <NavLink href="/design">Design</NavLink>
           &nbsp;|&nbsp;
-          <NavLink text="Maintenance" url="/maintenance" />
+          <NavLink href="/maintenance">Maintenance</NavLink>
           &nbsp;|&nbsp;
-          <NavLink text="Rentals" url="/rentals" />
+          <NavLink href="/rentals">Rentals</NavLink>
           &nbsp;|&nbsp;
-          {/* <NavLink text="Estimator" url="/estimator" />&nbsp;|&nbsp; */}
-          <NavLink text="Contact Us" url="/contact" />
-
+          {/* <NavLink text="Estimator" href="/estimator" />&nbsp;|&nbsp; */}
+          <NavLink href="/contact">Contact Us</NavLink>
+          &nbsp;|&nbsp;
+          <SignInOutLink />
         </div>
-          <SignInButton />
       </div>
     </div>
-  )
-}
-
-interface INavLinkProps {
-  text: string
-  url: string
-}
-
-const NavLink = ({ text, url }: INavLinkProps) => {
-  return (
-    <Link
-      className="text-sm font-medium uppercase mx-2 hover:text-brandprimary-500 tracking-widest transition duration-300"
-      href={url}
-    >
-      {text}
-    </Link>
   )
 }
