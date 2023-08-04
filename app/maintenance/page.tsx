@@ -3,9 +3,9 @@
 import styles from "./page.module.css"
 import { HalfImageSection } from "@/components/half-image-section"
 
-export default function Maintenace() {
+export default function Maintenance() {
   return (
-    <main className={`${styles.main} bg-brandprimary-200`}>
+    <main className={`${styles.main} bg-brandprimary-100`}>
       <HalfImageSection heading="Our Maintenance Services Include" imageSrc="/mightyoaks-1.webp">
         <ul>
           <li>Lawn Care (e.g. mowing, edging, fertilization, etc.)</li>

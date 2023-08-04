@@ -3,7 +3,7 @@ import styles from "./page.module.css"
 
 export default function Rentals() {
   return (
-    <main className={`${styles.main} bg-brandprimary-200`}>
+    <main className={`${styles.main} bg-brandprimary-100`}>
       <HalfImageSection heading="We also offer rental services" imageSrc="/mightyoaks-4.webp">
         <p>
           Details coming soon!

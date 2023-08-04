@@ -7,6 +7,7 @@ import { HeadlessSlideOver } from "./headless-slide-over"
 import { GiHamburgerMenu } from "react-icons/gi"
 import Link from "next/link"
 import styles from "./mobile-nav-bar-content.module.css"
+import { SignInOutButton } from "../buttons"
 
 const cormorantSc = Cormorant_SC({
   weight: "600",
@@ -25,13 +26,13 @@ export const MobileNavBarContent = () => {
 
         <div>
           <button
-            aria-label="Open panel"
-            className="border-brandsecondary-800"
+            aria-label="Toggle panel"
+            className="border-brandtertiary-300"
             onClick={(e) => {
               setSideBarOpen((current) => !current)
             }}
           >
-            <GiHamburgerMenu className="border-brandsecondary-700 text-brandsecondary-800" size={24} />
+            <GiHamburgerMenu className="border-brandsecondary-700 text-brandtertiary-300" size={24} />
           </button>
           <HeadlessSlideOver open={sideBarOpen} setOpen={setSideBarOpen}>
             <div className="flex flex-col">
@@ -43,6 +44,7 @@ export const MobileNavBarContent = () => {
               {/* <MobileNavLink text="Estimator" url="/estimator" onClick={() => setSideBarOpen(false)} /> */}
               {/* <MobileNavLink text="About Us" url="/about" onClick={() => setSideBarOpen(false)} /> */}
               <MobileNavLink text="Contact Us" url="/contact" onClick={() => setSideBarOpen(false)} />
+              <SignInOutButton className="mt-6 justify-self-center" />
             </div>
           </HeadlessSlideOver>
         </div>

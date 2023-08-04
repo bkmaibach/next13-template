@@ -8,7 +8,7 @@ import { CallToActionButton } from "@/components/call-to-action-button"
 
 export default function Home() {
   return (
-    <main className={`${styles.main} bg-brandprimary-200`}>
+    <main className={`${styles.main} bg-brandprimary-100`}>
       <ParallaxProvider>
         <ParallaxBox
           text="Mighty Oaks Landscaping"
@@ -47,7 +47,7 @@ export default function Home() {
           heading="Comprehensive Maintenance Services"
           url="/maintenance"
           text="We believe that landscaping is an ongoing process that requires consistent attention and care. That's why we offer comprehensive maintenance services tailored to your specific needs. Our team of skilled professionals will handle all the heavy lifting, ensuring your outdoor space remains healthy and vibrant year-round."
-          buttonText="Maintenace Services"
+          buttonText="Maintenance Services"
         />
         <ParallaxBox
           text="Family Business"
@@ -56,7 +56,7 @@ export default function Home() {
           startScroll={1250}
           endScroll={2800}
         />
-        <div className="w-full py-12 flex justify-center bg-brandprimary-200">
+        <div className="w-full py-12 flex justify-center bg-brandprimary-100">
           <p className="w-2/3 strong text-2xl">
             Whether you're interested in a new landscape design, need help with installation, or are looking for ongoing
             maintenance services, we're here to help. Contact us today to schedule a consultation and let us help you
@@ -83,7 +83,7 @@ const cormorantSc = Cormorant_SC({
 
 const HomeBlurbSection = ({ heading, text, url, buttonText, children }: IHomeBlurbSectionProps) => {
   return (
-    <div className="flex flex-col lg:flex-row w-full py-10 justify-center p-2 bg-brandprimary-200">
+    <div className="flex flex-col lg:flex-row w-full py-10 justify-center p-2 bg-brandprimary-100">
       <div className="w-full lg:w-1/3">
         <h1 className={`${cormorantSc.className} text-brandsecondary-600`}>{heading}</h1>
         {text && <p>{text}</p>}

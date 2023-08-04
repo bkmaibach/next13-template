@@ -34,7 +34,7 @@ export function SignInOutLink() {
   const { data: session, status } = useSession()
 
   if (status === "loading") return <>...</>
-  if (status === "authenticated") return <div className="flex"> <Image className="mx-4" src={session.user?.image ?? "/avatar-placeholder.svg"} height={32} width={32} alt={"Your Name"} /> <SignOutLink /></div>
+  if (status === "authenticated") return <div className="flex items-center"> <Image className="mx-2" src={session.user?.image ?? "/avatar-placeholder.svg"} height={32} width={32} alt={"Your Name"} /> <SignOutLink /></div>
   return <SignInLink />
 }
 

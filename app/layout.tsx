@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <body className="overflow-x-hidden bg-brandprimary-900">
           <Suspense fallback={<Loading />}>
             <NavBar />
-            <div className="w-screen z-10 relative bg-brandprimary-200">
+            <div className="w-screen z-10 relative bg-brandprimary-100">
               <div className="container flex flex-col w-full m-auto mb-96 z-10 relative">{children}</div>
             </div>
             <Footer />

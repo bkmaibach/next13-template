@@ -12,7 +12,7 @@ const cormorantSc = Cormorant_SC({
 
 export default function Contact() {
   return (
-    <main className={`${styles.main} bg-brandprimary-200`}>
+    <main className={`${styles.main} bg-brandprimary-100`}>
       <h1 className={`${cormorantSc.className} text-brandsecondary-600`}>Get in Touch</h1>
       <p><strong>We would be happy to connect with you</strong></p>
       <h3 className={`${cormorantSc.className} text-brandsecondary-600`}>Email:</h3>

@@ -3,7 +3,7 @@ import styles from "./page.module.css"
 
 export default function Design() {
   return (
-    <main className={`${styles.main} bg-brandprimary-200`}>
+    <main className={`${styles.main} bg-brandprimary-100`}>
       <HalfImageSection heading="Our Design services include..." imageSrc="/mightyoaks-3.webp">
         <ul>
           <li>Site Analysis and Assessment</li>

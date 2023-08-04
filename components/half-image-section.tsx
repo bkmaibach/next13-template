@@ -15,7 +15,7 @@ const cormorantSc = Cormorant_SC({
 
 
 export const HalfImageSection = ({ heading, children, imageSrc }: IHalfImageSectionProps) => (
-  <div className="flex flex-col lg:flex-row w-full h-full py-10 justify-center align-center p-2 items-center bg-brandprimary-200">
+  <div className="flex flex-col lg:flex-row w-full h-full py-10 justify-center align-center p-2 items-center bg-brandprimary-100">
     <Image
       alt="Project image"
       src={imageSrc}

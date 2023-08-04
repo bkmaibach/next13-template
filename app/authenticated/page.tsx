@@ -16,7 +16,7 @@ export default async function Authenticated() {
   if (!session) redirect("/api/auth/signin")
 
   return (
-    <main className={`${styles.main} bg-brandprimary-200`}>
+    <main className={`${styles.main} bg-brandprimary-100`}>
       <h1 className={`${cormorantSc.className} text-brandsecondary-600`}>You are authenticated!</h1>
     </main>
   )

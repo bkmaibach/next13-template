@@ -107,8 +107,7 @@ module.exports = {
           textTransform: "uppercase",
           border: "2px solid black",
           padding: "12px",
-          letterSpacing: "12px",
-
+          borderRadius: config("theme.borderRadius.md"),
         },
       })
     }),
